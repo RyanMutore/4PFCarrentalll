@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="enroll.html">Enroll</a></li>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="4pf-car-rental-high-resolution-logo.png" alt="Logo" class="logo"> <!-- Logo image -->
+    <main class="container">
+    <section class="contact">
+    <h1>Book Now</h1>
+            <form action="thank-you.html" method="POST">
+                    <label for="vehicle">Choose your vehicle:</label>
+                    <input type="text" id="vehicle" name="vehicle" required 
+                           pattern="G Wagon|Urus|Rolls Royce|Mercedes" 
+                           title="Please enter one of the following: G Wagon, Urus, Rolls Royce, Mercedes.">
+
+                <label for="Date">Select a Date:</label>
+                <input type="date" name="date" id="date" placeholder="Select a date">
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Enter your specifications"></textarea>
+                <a href="thank-you2.html" class="submit-button">Confirm Booking</a>  
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&COPY; 2025 Portfolio, All right reserved for Ryan.</p>
+    </footer>
+</body>
+</html>

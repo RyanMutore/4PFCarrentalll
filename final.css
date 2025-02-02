@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background: linear-gradient(to right, #4CAF50, #2196F3)
+}
+
+header {
+    background: black;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.welcome{
+    text-align: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: blueviolet;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* contact Page */
+.contact {
+    background-color: #f4f4f4;
+    padding: 7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.contact h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#contact-form{
+    display: grid;
+    gap: 1rem;
+    width: 93%;
+}
+.contact label{
+    font-weight: bold;
+}
+.contact input, .contact textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.contact button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.contact button:hover{
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        flex-direction: column;
+    }
+    .feature{
+        grid-template-columns: 1fr;
+    }
+    .image-text {
+        flex-direction: column; /* Stack the image and paragraph vertically */
+        align-items: center; /* Center align the items */
+        text-align: center; /* Center the text */
+    }
+    .image-text img {
+        margin: 0; /* Remove horizontal margin */
+        max-width: 100%; /* Make the image responsive */
+    }
+    .image-text p {
+        margin-top: 10px; /* Add some space between the image and the paragraph */
+        max-width: 100%; /* Ensure the paragraph takes full width */
+    }
+    .contact {
+        text-align: center; /* Center align the text in the form */
+    }
+    .contact h1 {
+        font-size: 1.8rem; /* Optionally reduce the heading size */
+    }
+    .contact label {
+        text-align: center; /* Center align the labels */
+        display: block; /* Ensure labels are block elements for centering */
+    }
+    .contact input, .contact select, .contact textarea {
+        margin: 0 auto; /* Center align input fields, select, and textarea */
+        display: block; /* Ensure inputs are block elements for centering */
+        width: 90%; /* Optionally set a width for better appearance */
+    }
+    .contact button {
+        margin: 0 auto; /* Center align the button */
+        display: block; /* Ensure button is a block element for centering */
+    }
+    .enroll {
+        text-align: center; /* Center align the text in the form */
+    }
+    .enroll h1 {
+        font-size: 1.5rem; /* Optionally reduce the heading size */
+    }
+    .enroll label {
+        text-align: center; /* Center align the labels */
+        display: block; /* Ensure labels are block elements for centering */
+    }
+    .enroll input, .enroll select {
+        margin: 0 auto; /* Center align input fields and select */
+        display: block; /* Ensure inputs are block elements for centering */
+        width: 90%; /* Optionally set a width for better appearance */
+    }
+    .enroll button {
+        margin: 0 auto; /* Center align the button */
+        display: block; /* Ensure button is a block element for centering */
+    }
+    .image-gallery{
+        text-align: center;
+    }
+}
+
+    
+@media (min-width: 1025px) {
+    .feature{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.start{
+    text-align: start;
+}
+
+/* new css from here for mainpage */
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-text {
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+}
+.image-text img {
+    display: block;
+    max-width: 400px;
+    margin: 0 20px;
+    align-items: end;
+}
+.image-text p {
+    max-width: 400px;
+}
+.link {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.paragraph{
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 3rem;
+    margin-top: 0rem;
+}
+
+/* thank you page */
+.touch{
+    text-align: center;
+}
+
+/* second thank you */
+
+.logo{
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+/* thank you button */
+
+
+
+.containerr {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#city-input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#get-weather-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#get-weather-btn:hover {
+    background-color: #1565C0;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
