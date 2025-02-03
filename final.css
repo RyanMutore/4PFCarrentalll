@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    background: linear-gradient(to right, #4CAF50, #2196F3)
+    background: white
 }
 
 header {
@@ -290,3 +290,4 @@ h1 {
     width: 100px;
     height: 100px;
 }
+

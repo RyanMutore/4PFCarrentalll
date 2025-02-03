@@ -11,7 +11,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="enroll.html">Enroll</a></li>
-                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="book.html">Book</a></li>
                 <li><a href="weather.html">Weather</a></li>
@@ -28,7 +28,7 @@
         </section>
     </main>
     <main>
-        <form class="enroll">
+        <form class="enroll" onsubmit="return redirectToThankYou()">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -37,21 +37,16 @@
 
             <label for="number">Phone Number:</label>
             <textarea id="message" name="message" required></textarea>
-            
+            <button type="submit">Submit</button>
         </form>
 
-        <div class="image-gallery">
-            <div class="image-item">
-                <a href="thank-you.html">
-                <button>Submit</button>
-                </a>
-            </div>
-           
-        </div>
+        
     </main>
 
     <footer>
         <p>&copy; Thank you for visiting our website!</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

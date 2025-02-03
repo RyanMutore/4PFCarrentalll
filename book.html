@@ -11,7 +11,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="enroll.html">Enroll</a></li>
-                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="book.html">Book</a></li>
                 <li><a href="weather.html">Weather</a></li>
@@ -22,7 +22,7 @@
     <main class="container">
     <section class="contact">
     <h1>Book Now</h1>
-            <form action="thank-you.html" method="POST">
+            <form onsubmit="return redirectToThankYou2()">
                     <label for="vehicle">Choose your vehicle:</label>
                     <input type="text" id="vehicle" name="vehicle" required 
                            pattern="G Wagon|Urus|Rolls Royce|Mercedes" 
@@ -33,14 +33,18 @@
 
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" placeholder="Enter your specifications"></textarea>
-                <a href="thank-you2.html" class="submit-button">Confirm Booking</a>  
+                <button type="submit">Submit</button>
                 
             </form>
         </section>
+        
     </main>
 
     <footer>
         <p>&COPY; 2025 Portfolio, All right reserved for Ryan.</p>
     </footer>
+    
+    <script src="script.js"></script>
+
 </body>
 </html>
