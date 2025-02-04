@@ -135,55 +135,55 @@ footer {
         grid-template-columns: 1fr;
     }
     .image-text {
-        flex-direction: column; /* Stack the image and paragraph vertically */
-        align-items: center; /* Center align the items */
-        text-align: center; /* Center the text */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
     }
     .image-text img {
-        margin: 0; /* Remove horizontal margin */
-        max-width: 100%; /* Make the image responsive */
+        margin: 0; 
+        max-width: 100%; 
     }
     .image-text p {
-        margin-top: 10px; /* Add some space between the image and the paragraph */
-        max-width: 100%; /* Ensure the paragraph takes full width */
+        margin-top: 10px; 
+        max-width: 100%; 
     }
     .contact {
-        text-align: center; /* Center align the text in the form */
+        text-align: center; 
     }
     .contact h1 {
-        font-size: 1.8rem; /* Optionally reduce the heading size */
+        font-size: 1.8rem; 
     }
     .contact label {
-        text-align: center; /* Center align the labels */
-        display: block; /* Ensure labels are block elements for centering */
+        text-align: center; 
+        display: block; 
     }
     .contact input, .contact select, .contact textarea {
-        margin: 0 auto; /* Center align input fields, select, and textarea */
-        display: block; /* Ensure inputs are block elements for centering */
-        width: 90%; /* Optionally set a width for better appearance */
+        margin: 0 auto; 
+        display: block; 
+        width: 90%; 
     }
     .contact button {
-        margin: 0 auto; /* Center align the button */
-        display: block; /* Ensure button is a block element for centering */
+        margin: 0 auto; 
+        display: block; 
     }
     .enroll {
-        text-align: center; /* Center align the text in the form */
+        text-align: center; 
     }
     .enroll h1 {
-        font-size: 1.5rem; /* Optionally reduce the heading size */
+        font-size: 1.5rem; 
     }
     .enroll label {
-        text-align: center; /* Center align the labels */
-        display: block; /* Ensure labels are block elements for centering */
+        text-align: center; 
+        display: block; 
     }
     .enroll input, .enroll select {
-        margin: 0 auto; /* Center align input fields and select */
-        display: block; /* Ensure inputs are block elements for centering */
-        width: 90%; /* Optionally set a width for better appearance */
+        margin: 0 auto; 
+        display: block; 
+        width: 90%; 
     }
     .enroll button {
-        margin: 0 auto; /* Center align the button */
-        display: block; /* Ensure button is a block element for centering */
+        margin: 0 auto; 
+        display: block; 
     }
     .image-gallery{
         text-align: center;
@@ -291,3 +291,17 @@ h1 {
     height: 100px;
 }
 
+#mybutton{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+#mybutton:hover {
+    background-color: #0056b3; 
+}
