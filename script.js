@@ -6,11 +6,6 @@ document.getElementById('get-weather-btn').addEventListener('click', function() 
     fetchWeather(cityName);
 });
 
-document.getElementById("myButton").addEventListener("click", function() {
-    alert("Button clicked!");
-    
-});
-
 async function fetchWeather(cityName) {
     const response = await fetch(`${url}?q=${cityName}&appid=${apiKey}&units=metric`);
     if (response.ok) {
