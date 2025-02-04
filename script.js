@@ -1,5 +1,5 @@
 const url = 'https://api.openweathermap.org/data/2.5/weather';
-const apiKey = 'da9b05ee0159cdcf2f9ad4fc69eb3f81'; // API key
+const apiKey = 'da9b05ee0159cdcf2f9ad4fc69eb3f81'; 
 
 document.getElementById('get-weather-btn').addEventListener('click', function() {
     const cityName = document.getElementById('city-input').value;
@@ -21,14 +21,12 @@ async function fetchWeather(cityName) {
     }
 }
 function redirectToThankYou2() {
-    // Redirect to thank-you2.html
     window.location.href = 'thank-you2.html';
-    return false; // Prevent the default form submission
+    return false; 
 }
 function redirectToThankYou() {
-    // Redirect to thank-you2.html
     window.location.href = 'thank-you.html';
-    return false; // Prevent the default form submission
+    return false; 
 }
 function displayWeather(data) {
     document.getElementById('city-name').textContent = data.name;
